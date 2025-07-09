@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #2887e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.piano-container {
+    position: relative;
+    background: #24232F;
+    padding: 30px 10px 10px;
+    border-radius: 10px;
+}
+
+.white-keys {
+    display: flex;
+    gap: 2px;
+}
+
+.white-key {
+    width: 3em;
+    height: 170px;
+    background: white;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.white-key:hover {
+    background: #ebebeb;
+}
+
+.black-keys {
+    position: absolute;
+    z-index: 1;
+}
+
+.black-key {
+    width: 1.5em;
+    height: 100px;
+    background: #01020A;
+    border-radius: 0 0 3px 3px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.black-key:hover {
+    background: #24272e;
+}
