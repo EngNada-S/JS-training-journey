@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #318DFC;
+}
+.typing-container{
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-size: 30px;
+    font-weight: bold;
+}
+.typing-text{
+    text-transform: capitalize;
+}
+.typing-cursor{
+    padding-left: 5px;
+    animation:blink 0.6s infinite;
+}
+@keyframes blink{
+    50%{ opacity: 0;}
+}
