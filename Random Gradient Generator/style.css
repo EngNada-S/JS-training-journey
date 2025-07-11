@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(88deg,#5e27ef,#6ab8d1);
+    align-content: center;
+}
+.gradient-generator {
+    width: 450px;
+    max-width: calc(100% - 30px);
+    padding: 30px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+.gradient-preview,
+.gradient-code {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+.gradient-preview {
+    height: 150px;
+}
+.gradient-code {
+    padding: 20px;
+    color: #333;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 15px;
+}
+.controls{
+    display: flex;
+    justify-content: space-evenly;
+}
+.controls button{
+    min-width: 100px;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    background-color: #466AD1;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}
+.controls button:hover{
+    background-color: #3555ac;
+}
+.copy-message {
+    width: 400px;
+    max-width: calc(100% - 20px);
+    text-align: center;
+    position: fixed;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.copy-message.show {
+    opacity: 1;
+}
